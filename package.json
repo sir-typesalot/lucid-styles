@@ -1,0 +1,11 @@
+{
+    "name": "lucid-styles",
+    "version": "0.4.2",
+    "scripts": {
+        "scss": "node-sass --watch scss -o css"
+    },
+    "dependencies": {
+       "express": "~4.16.0",
+       "express-favicon": "^2.0.1"
+    }
+}

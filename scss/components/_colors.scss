@@ -1,0 +1,33 @@
+// Define the color palette
+$color-palette: (
+    black: black,
+    white: white,
+    main-blue: blue,
+);
+
+$dark-theme: (
+    background: black,
+    primary-color: white,
+);
+
+$light-theme: (
+    background: white,
+    primary-color: black,
+);
+
+@each $colorName, $colorValue in $color-palette {
+    // this will generate classes like bg-black
+    .bg-#{$colorName}{
+        background-color: $colorValue;
+    }
+
+    // generate border color classes like border-black
+    .border-#{$colorName}{
+        border-color: $colorValue;
+    }
+
+    // generate text color classes like text-black
+    .text-#{$colorName}{
+        color: $colorValue;
+    }
+}
